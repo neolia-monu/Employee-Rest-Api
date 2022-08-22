@@ -1,0 +1,15 @@
+INSERT INTO employee (age, date_created, gender, email, first_name) VALUES (20, CURRENT_TIMESTAMP, "M", "monu@gmail.com" ,"Monu");
+INSERT INTO employee (age, date_created, gender, email, first_name) VALUES (21, CURRENT_TIMESTAMP, "F", "shreya@gmail.com" ,"Shreya");
+INSERT INTO employee (age, date_created, gender, email, first_name) VALUES (21, CURRENT_TIMESTAMP, "F", "rhea@gmail.com" ,"Rhea");
+INSERT INTO employee (age, date_created, gender, email, first_name) VALUES (22, CURRENT_TIMESTAMP, "M", "rahul@gmail.com" ,"Rahul");
+INSERT INTO employee (age, date_created, gender, email, first_name) VALUES (22, CURRENT_TIMESTAMP, "M", "varun@gmail.com" ,"Varun");
+INSERT INTO employee (age, date_created, gender, email, first_name) VALUES (22, CURRENT_TIMESTAMP, "F", "kajal@gmail.com" ,"Kajal");
+INSERT INTO employee (age, date_created, gender, email, first_name) VALUES (20, CURRENT_TIMESTAMP, "F", "khushboo@gmail.com" ,"Khushboo");
+INSERT INTO employee (age, date_created, gender, email, first_name) VALUES (22, CURRENT_TIMESTAMP, "M", "tanmay@gmail.com" ,"Tanmay");
+INSERT INTO employee (age, date_created, gender, email, first_name) VALUES (20, CURRENT_TIMESTAMP, "F", "kiara@gmail.com" ,"Kiara");
+INSERT INTO employee (age, date_created, gender, email, first_name) VALUES (23, CURRENT_TIMESTAMP, "M", "aman@gmail.com" ,"Aman");
+INSERT INTO employee (age, date_created, gender, email, first_name) VALUES (22, CURRENT_TIMESTAMP, "M", "ritesh@gmail.com" ,"Ritesh");
+INSERT INTO employee (age, date_created, gender, email, first_name) VALUES (21, CURRENT_TIMESTAMP, "F", "shirley@gmail.com" ,"Shirley");
+INSERT INTO employee (age, date_created, gender, email, first_name) VALUES (20, CURRENT_TIMESTAMP, "M", "akhil@gmail.com" ,"Akhil");
+INSERT INTO employee (age, date_created, gender, email, first_name) VALUES (21, CURRENT_TIMESTAMP, "F", "bharkha@gmail.com" ,"Barkha");
+INSERT INTO employee (age, date_created, gender, email, first_name) VALUES (22, CURRENT_TIMESTAMP, "M", "anish@gmail.com" ,"Anish");
