@@ -6,6 +6,7 @@ import com.example.restserviceclg.repository.EmployeeRepository;
 import com.example.restserviceclg.service.EmployeeService;
 import org.springframework.stereotype.Service;
 
+import java.time.Instant;
 import java.util.List;
 
 @Service
@@ -29,6 +30,7 @@ public class EmployeeImp implements EmployeeService {
 
     @Override
     public Employee saveEmployee(Employee employee) {
+        employee.setDateCreated(Instant.now());
         return employeeRepository.save(employee);
     }
 
