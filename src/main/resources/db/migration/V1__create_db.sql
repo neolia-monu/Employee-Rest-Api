@@ -1,0 +1,1 @@
+create table employee (id bigint not null auto_increment, age integer not null, date_created datetime(6), email varchar(255), first_name varchar(255) not null, gender char(1), primary key (id)) engine=InnoDB;
