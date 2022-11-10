@@ -33,4 +33,34 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Build with Maven
-        run: mvn -B package --file pom.xml
+        run: mvn clean install
+
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.0
+        with:
+          name: artifact-file.jar
+          path: target/*.jar
+
+  deploy:
+
+    needs: build
+    name: deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v3.0.0
+        with:
+          name: artifact-file-jar
+
+      - name: Deploy to AWS EB
+        uses: einaregilsson/beanstalk-deploy@6f594ded1b0a22c5e5aa1088e7c58dc5816c92ea
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          use_existing_version_if_available: false
+          application_name: spring-boot-react-github-actions-aws
+          environment_name: Springbootreactgithubactionsaws-env
+          version_label: ${{github.SHA}}
+          region: ap-south-1
+          deployment_package: Rest-service-Clg-0.0.1-SNAPSHOT.jar
