@@ -38,7 +38,7 @@ jobs:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.0
         with:
-          name: artifact-file.jar
+          name: artifact-file-jar
           path: target/*.jar
 
   deploy:
