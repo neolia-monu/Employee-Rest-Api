@@ -60,7 +60,7 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           use_existing_version_if_available: false
           application_name: spring-boot-react-github-actions-aws
-          environment_name: Springbootreactgithubactionsaws-env
+          environment_name: Springbootreactgithubactionsaws-env-1
           version_label: ${{github.SHA}}
           region: ap-south-1
           deployment_package: Rest-service-Clg-0.0.1-SNAPSHOT.jar
